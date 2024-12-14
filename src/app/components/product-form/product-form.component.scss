@@ -1,0 +1,145 @@
+/* Overall form styling */
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    padding: 40px;
+    border-radius: 121px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .product-form:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Form title */
+  .form-title {
+    color: #58abf5;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Styling for form fields */
+  .form-field {
+    width: 100%;
+  }
+  
+  .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: rgba(255, 255, 255, 0.8); /* Light white background */
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .mat-form-field-appearance-fill .mat-form-field-flex:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Hover effect */
+  }
+  
+  .mat-form-field-appearance-fill .mat-label {
+    color: #3f51b5;
+  }
+  
+  /* Styling for the checkbox */
+  .in-stock-checkbox {
+    margin-top: 10px;
+    color: #4caf50;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .in-stock-checkbox:hover {
+    color: #388e3c;
+  }
+  
+  /* Action buttons (Submit and Cancel) */
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .submit-button {
+    background-color: #3f51b5;
+    color: white;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    padding: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submit-button:hover {
+    background-color: #303f9f;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .submit-button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+    color: white;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    padding: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cancel-button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cancel-button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+  
+  /* Adding hover effect to the form fields */
+  .mat-form-field:hover .mat-form-field-flex {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .product-form {
+      padding: 25px;
+    }
+  
+    .form-title {
+      font-size: 24px;
+    }
+  
+    .actions {
+      flex-direction: column;
+    }
+  
+    .submit-button, .cancel-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

@@ -1,0 +1,115 @@
+/* Container */
+.container {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f4f7fa;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    color: #34495e;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Filter Section */
+.filter-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.filter {
+    width: 250px;
+    font-size: 1rem;
+}
+
+/* Table Section */
+.table-container {
+    margin-bottom: 40px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table Header */
+th.mat-header-cell {
+    background-color: #3498db;
+    color: white;
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+td.mat-cell {
+    font-size: 1rem;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Add Product Button */
+.add-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.add-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+}
+
+mat-icon {
+    font-size: 24px;
+}
+
+/* Hover Effects for Buttons */
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .filter-container {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .filter {
+        width: 100%;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .add-button {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
